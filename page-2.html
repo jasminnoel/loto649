@@ -1,0 +1,56 @@
+﻿<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Loto 6/49</title>
+    <link rel="stylesheet" type="text/css" href="Loto6-49.css">
+<script src="Loto6-49.js">
+    //Projet final du cours 173-Introduction à la programmation
+    //Créé par Jasmin Noël
+</script>
+</head>
+<body onload = "affAccueil()">
+    <div class="container">
+    <div id="header">
+    <h1>Loto 6/49</h1>
+    <p id="reglement">Règlements<br>
+Pour jouer, entrez 6 nombres différents compris entre 1 et 49 inclusivement et cliquer sur le bouton Jouer. Plus vous obtenez de correspondances, plus vous gagnez gros! Attention toutefois, car chaque partie coûte 10 points. Bonne chance!    
+        <input type="button" value="J'ai compris" onclick="affReglement()" /><p></div>
+    
+    <div id="profil">
+        <h3 id="accueil">Bonjour Nouveau joueur</h3>
+        <form name="form2" action="">
+           <input type="button" name="btnCapital" value="Entrer votre capital de départ :" onclick="ajouterCapital()" /> <input type="number" min="100" style="width:55px;" value="0" name="miseDepart"><br />
+        Parties jouées : <input type="text" name="partiesInput" id="partiesId" style="width:30px;" value="0" disabled /> Réussites : <input type="text" value="0" name="winsInput" id="winsId" style="width:30px;" disabled />
+        </form>
+        <p class="inline">étape 2</p><br>
+    </div>
+    
+    <div class="champs" id="formulaire">
+
+        <h3>Jouer au 6/49</h3>
+    <form name="usrForm">
+        Votre sélection : <br>
+        <input type="text" class="round" name="usr1" id="usrId1" onblur="validerNb(this,0)">
+        <input type="text" class="round" name="usr2" id="usrId2" onblur="validerNb(this,1)">
+        <input type="text" class="round" name="usr3" id="usrId3" onblur="validerNb(this,2)">
+        <input type="text" class="round" name="usr4" id="usrId4" onblur="validerNb(this,3)">
+        <input type="text" class="round" name="usr5" id="usrId5" onblur="validerNb(this,4)">
+        <input type="text" class="round" name="usr6" id="usrId6" onblur="validerNb(this,5)">
+        </form><br>
+    <form name="autoForm">
+        Numéros gagnants : <br>
+        <input type="text" class="round" name="nb1" id="nbId1" disabled>
+        <input type="text" class="round" name="nb2" id="nbId2" disabled>
+        <input type="text" class="round" name="nb3" id="nbId3" disabled>
+        <input type="text" class="round" name="nb4" id="nbId4" disabled>
+        <input type="text" class="round" name="nb5" id="nbId5" disabled>
+        <input type="text" class="round" name="nb6" id="nbId6" disabled><br>
+        <input type="button" name="btnGenerer" value="Jouer" onclick="jouer()">
+        <input type="checkbox" id="btnAutoId" name="btnAuto" value="MiseAutoatique" onclick="miseAuto()"> Mise automatique
+        </form>
+    </div>
+        </div>
+    <p style="text-align:center">Édition 2017 par Jasmin Noël</p>
+</body>
+</html>

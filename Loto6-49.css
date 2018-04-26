@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body {
+    font-family: 'Roboto', sans-serif;
+    color: floralwhite;
+    background-color: #679289;
+    background-image: url('649.png');
+    background-size: 100%;
+}
+h1{
+    color:#e84200;
+    font-size:400%;
+    line-height:20%;
+    text-decoration:underline solid white;
+}
+h3 {
+    display:inline;
+    margin:0;
+    padding:0;
+}
+.champs {
+    margin-left:60px;
+}
+.inline {
+    float:left;
+    padding-top:5px;
+    border-bottom:3px solid #e84200;
+}
+.round {
+    border-radius: 30px;
+    text-align:center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    margin: 2px;
+    color:black;
+    background-color:none;
+    border:none;
+}
+.gagnant{
+    border-radius: 30px;
+    text-align:center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    margin: 2px;
+    color:white;
+    background-color:#e84200;
+    border:2px solid white;
+}
+.container {
+    border-radius: 25px;
+    align-self: center;
+    margin: auto;
+    margin-top: 60px;
+    width: 550px;
+    padding: 30px;
+    box-shadow: 10px 10px #e84200;
+    background-color: #1d7874;
+    opacity: 80;
+}
+
+form{
+    line-height:30px;
+}
+.required{
+    border: 2px solid red;
+}

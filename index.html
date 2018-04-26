@@ -1,0 +1,37 @@
+﻿<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Loto 6/49</title>
+    <link rel="stylesheet" type="text/css" href="Loto6-49.css">
+<script src="Loto6-49.js">
+    //Projet final du cours 173-Introduction à la programmation
+    //Créé par Jasmin Noël
+</script>
+</head>
+<body>
+    <div class="container">
+       <div id="header">
+            <h1>Loto 6/49</h1>
+            <p id="reglement">Règlements<br>
+                Pour jouer, entrez 6 nombres différents compris entre 1 et 49 inclusivement et cliquer sur le bouton Jouer. Plus vous obtenez de correspondances, plus vous gagnez gros! Attention toutefois, car chaque partie coûte 10 points. Bonne chance! <input type="button" value="J'ai compris" onclick="affReglement()" /><p>
+        </div>
+        <p class="inline">étape 1</p><br />
+         <div class="champs">
+
+            <h3>Profil</h3>
+        <form name="form1" action="">
+            Prénom : <input type="text" name="prenom" placeholder="Votre prénom" autofocus>
+            Nom : <input type="text" name="nom" placeholder="Votre nom"><br>
+            Sexe : <input type="radio" name="sexe" value="Homme">Homme  
+            <input type="radio" name="sexe" value="Femme">Femme  
+            <input type="radio" name="sexe" value="Autre">Je préfère ne pas répondre  <br>
+            Date de naissance : <input type="date" name="dateNaissance" placeholder="AAAA-MM-JJ"><br>
+            Courriel : <input type="email" name="courriel" placeholder="exemple@exemple.com"><br>
+            <input type="button" name="btnJouer" value="Je suis majeur" onclick="validerProfil()">
+            </form>
+        </div>
+</div>
+                <p style="text-align:center">Édition 2017 par Jasmin Noël</p>
+</body>
+</html>
